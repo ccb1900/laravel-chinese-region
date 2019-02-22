@@ -1,0 +1,34 @@
+{
+    "name": "ccb/laravel-region",
+    "description": "insert cities",
+    "keywords": [
+        "省",
+        "市",
+        "区"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ccb",
+            "email": "ccb412727@qq.com"
+        }
+    ],
+    "require": {
+        "ext-zip": "*",
+        "ext-gd": "*",
+        "overtrue/pinyin": "^4.0",
+        "phpoffice/phpspreadsheet": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ccb\\Region\\": "/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ccb\\Region\\CcbRegionServiceProvider"
+            ]
+        }
+    }
+}
