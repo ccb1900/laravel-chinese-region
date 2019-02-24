@@ -94,7 +94,7 @@ class RegionGenerate extends Command
                         }
 
                     }
-                    \App\Models\Region::query()->insert($regions);
+                    Region::query()->insert($regions);
                     $this->info("insert ".count($regions).' records success');
                 }
             } catch (\PhpOffice\PhpSpreadsheet\Exception $e) {
