@@ -22,6 +22,8 @@ class CreateRegionsTable extends Migration
             $table->string("abbr")->comment("首字母缩写");
             $table->tinyInteger("level")->comment("级别");
         });
+
+        Artisan::call("region:generate");
     }
 
     /**
